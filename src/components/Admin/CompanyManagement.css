@@ -1,0 +1,39 @@
+.company-management {
+    padding: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input,
+  .form-container textarea,
+  .form-container select,
+  .form-container button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .company-list {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .company-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .company-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

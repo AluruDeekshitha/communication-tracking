@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #f9dddd; /* Blue */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; 
+  padding: 0.5rem 1rem; 
+}
+
+.navbar .nav-links {
+  display: flex; /* Arrange nav items in a row */
+  gap: 1rem; /* Add spacing between nav items */
+  list-style: none; /* Remove list bullets */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+
+.navbar .nav-links li a {
+  border-radius: 0.375rem;
+  font-size: large;
+  font-style: initial;
+  transition: background-color 0.3s;
+  color: #eb3471;
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Add padding for clickable area */
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #3B82F6; /* Darker blue on hover */
+  color: palevioletred;
+  text-align: center;
+  
+}
+.image{
+  width: 30px;
+  height: auto;
+}
+.head{
+  padding-right: 90%;
+  /* padding-left: 50%; */
+}
