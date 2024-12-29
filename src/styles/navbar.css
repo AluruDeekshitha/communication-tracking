@@ -1,10 +1,12 @@
+/* Basic Styles for Navbar */
 .navbar {
-  background-color: #f9dddd; /* Blue */
+  background-color: #f9dddd; /* Light pink background */
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex; /* Use flexbox to align items in a row */
-  align-items: center; 
-  padding: 0.5rem 1rem; 
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between; /* Ensure space between the logo and the nav links */
 }
 
 .navbar .nav-links {
@@ -15,14 +17,12 @@
   padding: 0; /* Remove default padding */
 }
 
-
-
 .navbar .nav-links li a {
   border-radius: 0.375rem;
   font-size: large;
   font-style: initial;
   transition: background-color 0.3s;
-  color: #eb3471;
+  color: #eb3471; /* Pink color for text */
   text-decoration: none; /* Remove underline */
   padding: 0.5rem 1rem; /* Add padding for clickable area */
 }
@@ -31,13 +31,64 @@
   background-color: #3B82F6; /* Darker blue on hover */
   color: palevioletred;
   text-align: center;
-  
 }
-.image{
+
+.image {
   width: 30px;
   height: auto;
 }
-.head{
-  padding-right: 90%;
-  /* padding-left: 50%; */
+
+.head {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1rem; /* Add more padding for small devices */
+  }
+
+  /* Adjust the logo alignment and size */
+  .head {
+    padding-right: 0; /* Remove padding to allow the logo to align properly */
+    text-align: left;
+    font-size: 1.25rem; /* Reduce logo size on smaller devices */
+  }
+
+  /* Stack the navigation items vertically */
+  .navbar .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+    width: 100%; /* Ensure the links take full width */
+  }
+
+  .navbar .nav-links li {
+    width: 100%; /* Make each item take full width */
+    text-align: left; /* Align text to the left */
+  }
+
+  .navbar .nav-links li a {
+    text-align: left; /* Align text to the left in each link */
+    padding: 0.75rem 1rem; /* Add more padding for easier tapping */
+    width: 100%; /* Make the links fill the entire width */
+  }
+
+  /* Adjust the image size for mobile */
+  .image {
+    width: 25px; /* Smaller image size on mobile */
+  }
+}
+
+/* For smaller mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .navbar .head {
+    font-size: 1.1rem; /* Reduce font size of the logo */
+  }
+
+  .navbar .nav-links li a {
+    font-size: medium; /* Adjust font size for smaller screens */
+  }
 }
