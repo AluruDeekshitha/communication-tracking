@@ -1,7 +1,7 @@
 import React from 'react';
 import CompanyManagement from '../components/Admin/CompanyManagement';
 import CommunicationMethodsManager from '../components/CommunicationMethodsManager';
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
 import '../styles/AdminModule.css';
 
 const AdminPage = () => {
